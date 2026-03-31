@@ -31,4 +31,10 @@ public class CalculatorTest {
     void shouldThrowExceptionWhenDividingByZero() {
         assertThrows(IllegalArgumentException.class, () -> calculator.divide(10, 0));
     }
+
+    @Test
+    void shouldCalculateDivision() {
+        double result = calculator.divide(20, 5);
+        assertEquals(4, result);
+    }
 }
