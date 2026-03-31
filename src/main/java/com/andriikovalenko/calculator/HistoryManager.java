@@ -26,4 +26,8 @@ public class HistoryManager {
     public String exportHistoryAsJson() {
         return gson.toJson(history);
     }
+
+    public boolean isHistoryEmpty() {
+        return history.isEmpty();
+    }
 }

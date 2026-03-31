@@ -27,6 +27,8 @@ public class Main {
         historyManager.addResult(calculationResult);
 
         System.out.println("Result: " + result);
+        System.out.println("Calculation summary:");
+        System.out.println(calculationResult);
         System.out.println("History as JSON:");
         System.out.println(historyManager.exportHistoryAsJson());
 
