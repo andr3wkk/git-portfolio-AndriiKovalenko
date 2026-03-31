@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Enter first number:");
         double firstNumber = inputParser.parseNumber(scanner.nextLine());
 
-        System.out.println("Enter operation (+, -, *, /):");
+        System.out.println("Enter operation (+, -, *, /, add, subtract, multiply, divide):");
         OperationType operationType = inputParser.parseOperation(scanner.nextLine());
 
         System.out.println("Enter second number:");
