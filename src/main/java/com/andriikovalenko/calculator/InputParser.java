@@ -3,11 +3,13 @@ package com.andriikovalenko.calculator;
 public class InputParser {
 
     public OperationType parseOperation(String input) {
-        return switch (input.trim().toLowerCase()) {
-            case "+", "add" -> OperationType.ADD;
-            case "-", "subtract" -> OperationType.SUBTRACT;
-            case "*", "multiply" -> OperationType.MULTIPLY;
-            case "/", "divide" -> OperationType.DIVIDE;
+        String normalizedInput = input.trim().toLowerCase();
+
+        return switch (normalizedInput) {
+            case "+", "add", "addition" -> OperationType.ADD;
+            case "-", "subtract", "subtraction" -> OperationType.SUBTRACT;
+            case "*", "multiply", "multiplication" -> OperationType.MULTIPLY;
+            case "/", "divide", "division" -> OperationType.DIVIDE;
             default -> throw new IllegalArgumentException("Unsupported operation: " + input);
         };
     }
