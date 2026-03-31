@@ -1,2 +1,2 @@
 # git-portfolio-AndriiKovalenko
-Java calculator portfolio project using Maven and Git workflow.
+Java calculator portfolio project using Maven, JUnit testing, and Git workflow.
